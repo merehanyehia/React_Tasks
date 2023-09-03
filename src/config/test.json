@@ -1,0 +1,51 @@
+{
+  "screens": [
+    {
+      "id": 1,
+      "name": "SC_1",
+      "children": [
+        {
+          "id": 0,
+          "componentName": "Header"
+        },
+        {
+          "id": 1,
+          "componentName": "Form"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SC_2",
+      "children": [
+        {
+          "id": 0,
+          "componentName": "Header"
+        }
+      ]
+    }
+  ],
+  "formOptions": [
+    {
+      "id": 0,
+      "type": "email",
+      "placeholder": "type ur email",
+      "label": "email"
+    },
+    {
+      "id": 2,
+      "type": "password",
+      "placeholder": "type ur pswd",
+      "label": "password"
+    }
+  ],
+  "tableBody": {
+    "headers": ["id", "firstname", "lastname", "time"],
+    "data": [
+      { "id": 1, "firstname": "mohamed", "lastname": "aref", "time": "12.11" },
+      { "id": 2, "firstname": "mahmoud", "lastname": "aref", "time": "14.11" },
+      { "id": 3, "firstname": "ahmed", "lastname": "aref", "time": "15.11" },
+      { "id": 4, "firstname": "adam", "lastname": "aref", "time": "16.11" }
+    ]
+  }
+}
