@@ -2,7 +2,7 @@ import jsonData from "../config/test2.json";
 
 import { getComponentByname } from "../config/configComponent";
 function DynamicPage() {
-  const id = 1;
+  const id = 3;
   const screen = jsonData.screens.find((screen) => screen.id === id);
 // console.log(screen);
 

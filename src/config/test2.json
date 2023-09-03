@@ -70,6 +70,36 @@
             }
           }
         ]
+      },{
+        "id":3,
+        "name":"SC_3",
+        "children":[
+          {
+            "id":0,
+            "componentName": "Header"
+          },
+          {
+            "id":1,
+            "componentName":"Card",
+            "props":[
+              {
+                "id":1,
+                "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+                "paragraph":"this is card",
+                "span":"created by FE Team",
+                "button":[{
+                  "onClick": "showModel",
+                  "children": "show"
+                             }],
+                  "model":{
+                    "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+                    "paragraph":"this is card",
+                    "span":"created by FE Team"   
+                  }
+              }
+            ]
+          }
+        ]
       }
     ]
   }
