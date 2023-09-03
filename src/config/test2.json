@@ -1,76 +1,167 @@
 {
-    "screens": [
-      {
-        "id": 1,
-        "name": "SC_1",
-        "children": [
-          {
-            "id": 0,
-            "componentName": "Header"
-          },
-          {
-            "id": 1,
-            "componentName": "Form",
-            "props": [
+  "screens": [
+    {
+      "id": 1,
+      "name": "SC_1",
+      "children": [
+        {
+          "id": 0,
+          "componentName": "navBar",
+          "props": [
+            {
+              "id": 0,
+              "logo": "https://cdn.logo.com/hotlink-ok/logo-social.png",
+              "screenID": 1
+            },
+            { "id": 1, "title": "screen1", "screenID": 1 },
+            { "id": 2, "title": "screen2", "screenID": 2 },
+            { "id": 3, "title": "screen3", "screenID": 3 }
+          ]
+        },
+        {
+          "id": 1,
+          "componentName": "Form",
+          "props": [
+            {
+              "id": 0,
+              "type": "email",
+              "placeholder": "type ur email",
+              "label": "email"
+            },
+            {
+              "id": 2,
+              "type": "password",
+              "placeholder": "type ur pswd",
+              "label": "password"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "componentName": "Footer"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SC_2",
+      "children": [
+        {
+          "id": 0,
+          "componentName": "navBar",
+          "props": [
+            {
+              "id": 0,
+              "logo": "https://cdn.logo.com/hotlink-ok/logo-social.png"
+            },
+            { "id": 1, "title": "screen1", "screenID": 1 },
+            { "id": 2, "title": "screen2", "screenID": 2 },
+            { "id": 3, "title": "screen3", "screenID": 3 }
+          ]
+        },
+        {
+          "id": 2,
+          "componentName": "Header"
+        },
+        {
+          "id": 1,
+          "componentName": "Table",
+          "props": {
+            "headers": ["id", "firstname", "lastname", "time"],
+            "data": [
               {
-                "id": 0,
-                "type": "email",
-                "placeholder": "type ur email",
-                "label": "email"
+                "id": 1,
+                "firstname": "mohamed",
+                "lastname": "aref",
+                "time": "12.11"
               },
               {
                 "id": 2,
-                "type": "password",
-                "placeholder": "type ur pswd",
-                "label": "password"
+                "firstname": "mahmoud",
+                "lastname": "aref",
+                "time": "14.11"
+              },
+              {
+                "id": 3,
+                "firstname": "ahmed",
+                "lastname": "aref",
+                "time": "15.11"
+              },
+              {
+                "id": 4,
+                "firstname": "adam",
+                "lastname": "aref",
+                "time": "16.11"
               }
             ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "SC_2",
-        "children": [
-          {
-            "id": 0,
-            "componentName": "Header"
-          },
-          {
-            "id": 1,
-            "componentName": "Table",
-            "props": {
-              "headers": ["id", "firstname", "lastname", "time"],
-              "data": [
-                {
-                  "id": 1,
-                  "firstname": "mohamed",
-                  "lastname": "aref",
-                  "time": "12.11"
-                },
-                {
-                  "id": 2,
-                  "firstname": "mahmoud",
-                  "lastname": "aref",
-                  "time": "14.11"
-                },
-                {
-                  "id": 3,
-                  "firstname": "ahmed",
-                  "lastname": "aref",
-                  "time": "15.11"
-                },
-                {
-                  "id": 4,
-                  "firstname": "adam",
-                  "lastname": "aref",
-                  "time": "16.11"
-                }
-              ]
+        },
+        {
+          "id": 3,
+          "componentName": "Footer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SC_3",
+      "children": [
+        {
+          "id": 0,
+          "componentName": "navBar",
+          "props": [
+            {
+              "id": 0,
+              "logo": "https://cdn.logo.com/hotlink-ok/logo-social.png"
+            },
+            { "id": 1, "title": "screen1", "screenID": 1 },
+            { "id": 2, "title": "screen2", "screenID": 2 },
+            { "id": 3, "title": "screen3", "screenID": 3 }
+          ]
+        },
+        {
+          "id": 1,
+          "componentName": "Form",
+          "props": [
+            {
+              "id": 0,
+              "type": "email",
+              "placeholder": "type your email",
+              "label": "email"
+            },
+            {
+              "id": 1,
+              "type": "password",
+              "placeholder": "type yous password",
+              "label": "password"
+            }  , {
+              "id": 2,
+              "type": "name",
+              "placeholder": "type your name",
+              "label": "name"
+            }, {
+              "id": 3,
+              "type": "phone",
+              "placeholder": "type your phone",
+              "label": "number"
+            }, {
+              "id": 4,
+              "type": "date",
+              "label": "BOD"
+            },{
+              "id": 5,
+              "type": "file",
+              "label": "photo"
+            },{
+              "id":6,
+              "type":"radio",
+              "label":"gender",
+              "data":["male","female"]
             }
-          }
-        ]
-      }
-    ]
-  }
-  
+          ]
+        }
+     
+      ]
+    }
+  ]
+}

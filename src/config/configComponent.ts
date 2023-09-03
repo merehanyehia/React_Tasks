@@ -3,11 +3,15 @@ import Header from "../components/Header";
 import Table from "../components/Table";
 import Form from "../components/Form";
 import Error from '../components/error';
+import Navbar from '../components/navBar';
+import Footer from '../components/Footer';
 
-const pageComponentMap: { [key: string]: React.FC<ReactElement> } = {
+const pageComponentMap: { [key: string]: React.FC<any> } = {
   "Header": Header,
   "Table": Table,
-  "Form": Form
+  "Form": Form,
+  "navBar":Navbar,
+  "Footer":Footer
 };
 
 export const getComponentByname = (name: string): React.FC<ReactElement> => {
