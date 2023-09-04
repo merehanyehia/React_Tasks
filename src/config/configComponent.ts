@@ -6,6 +6,7 @@ import Error from '../components/error';
 import Card from '../components/Card';
 import Navbar from '../components/navBar';
 import Footer from '../components/Footer';
+import Model from '../components/Model';
 
 const pageComponentMap: { [key: string]: React.FC<any> } = {
   "Header": Header,
@@ -13,7 +14,8 @@ const pageComponentMap: { [key: string]: React.FC<any> } = {
   "Form": Form,
   "Card":Card,
   "navBar":Navbar,
-  "Footer":Footer
+  "Footer":Footer,
+  "Model":Model
 };
 
 

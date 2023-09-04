@@ -15,7 +15,8 @@
             },
             { "id": 1, "title": "screen1", "screenID": 1 },
             { "id": 2, "title": "screen2", "screenID": 2 },
-            { "id": 3, "title": "screen3", "screenID": 3 }
+            { "id": 3, "title": "screen3", "screenID": 3 },
+            { "id": 4, "title": "screen4", "screenID": 4}
           ]
         },
         {
@@ -56,7 +57,9 @@
             },
             { "id": 1, "title": "screen1", "screenID": 1 },
             { "id": 2, "title": "screen2", "screenID": 2 },
-            { "id": 3, "title": "screen3", "screenID": 3 }
+            { "id": 3, "title": "screen3", "screenID": 3 },
+            { "id": 4, "title": "screen4", "screenID": 4}
+
           ]
         },
         {
@@ -116,7 +119,8 @@
             },
             { "id": 1, "title": "screen1", "screenID": 1 },
             { "id": 2, "title": "screen2", "screenID": 2 },
-            { "id": 3, "title": "screen3", "screenID": 3 }
+            { "id": 3, "title": "screen3", "screenID": 3 },
+            { "id": 4, "title": "screen4", "screenID": 4}
           ]
         },
         {
@@ -158,11 +162,10 @@
               "label":"gender",
               "data":["male","female"]
             }
-        
         ]
-      },{
+      }]},{
         "id":4,
-        "name":"SC_3",
+        "name":"SC_4",
         "children":[
           {
             "id":0,
@@ -180,12 +183,23 @@
                 "button":[{
                   "onClick": "showModel",
                   "children": "show"
-                             }],
-                  "model":{
-                    "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-                    "paragraph":"this is card",
-                    "span":"created by FE Team"   
-                  }
+                             }]
+
+              }
+            ]
+          },
+          {
+            "id":2,
+            "componentName":"Model",
+            "props":[
+              {
+                  "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+                  "paragraph":"this is card",
+                  "span":"created by FE Team",
+                  "button":[{
+                    "onClick": "hideModel",
+                    "children": "Close"
+                               }]   
               }
             ]
           }
@@ -193,8 +207,7 @@
       }
     ]
   }
-]
-}
+
   
   
        
