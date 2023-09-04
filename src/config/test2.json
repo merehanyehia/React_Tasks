@@ -16,7 +16,8 @@
             { "id": 1, "title": "screen1", "screenID": 1 },
             { "id": 2, "title": "screen2", "screenID": 2 },
             { "id": 3, "title": "screen3", "screenID": 3 },
-            { "id": 4, "title": "screen4", "screenID": 4}
+            { "id": 4, "title": "screen4", "screenID": 4 }
+
           ]
         },
         {
@@ -58,13 +59,9 @@
             { "id": 1, "title": "screen1", "screenID": 1 },
             { "id": 2, "title": "screen2", "screenID": 2 },
             { "id": 3, "title": "screen3", "screenID": 3 },
-            { "id": 4, "title": "screen4", "screenID": 4}
+            { "id": 4, "title": "screen4", "screenID": 4 }
 
           ]
-        },
-        {
-          "id": 2,
-          "componentName": "Header"
         },
         {
           "id": 1,
@@ -104,11 +101,10 @@
           "componentName": "Footer"
         }
       ]
-    },
-    {
-      "id": 3,
-      "name": "SC_3",
-      "children": [
+    },{
+      "id":3,
+      "name":"SC_3",
+      "children":[
         {
           "id": 0,
           "componentName": "navBar",
@@ -120,94 +116,129 @@
             { "id": 1, "title": "screen1", "screenID": 1 },
             { "id": 2, "title": "screen2", "screenID": 2 },
             { "id": 3, "title": "screen3", "screenID": 3 },
-            { "id": 4, "title": "screen4", "screenID": 4}
+            { "id": 4, "title": "screen4", "screenID": 4 }
+
           ]
         },
         {
-          "id": 1,
-          "componentName": "Form",
+          "id":1,
+          "componentName":"Card",
+          "props":[
+            {
+              "id":1,
+              "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+              "paragraph":"this is card",
+              "span":"created by FE Team",
+              "button":[{
+                "onClick": "showModel",
+                "children": "show"
+                           }],
+                "model":{
+                  "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+                  "paragraph":"this is card",
+                  "span":"created by FE Team"   
+                }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "componentName": "Footer"
+        }
+      ]
+    },{
+      "id":4,
+      "name":"SC_4",
+      "children":[
+        {
+          "id": 0,
+          "componentName": "navBar",
           "props": [
             {
               "id": 0,
-              "type": "email",
-              "placeholder": "type your email",
-              "label": "email"
+              "logo": "https://cdn.logo.com/hotlink-ok/logo-social.png"
             },
+            { "id": 1, "title": "screen1", "screenID": 1 },
+            { "id": 2, "title": "screen2", "screenID": 2 },
+            { "id": 3, "title": "screen3", "screenID": 3 },
+            { "id": 4, "title": "screen4", "screenID": 4 }
+
+          ]
+        },
+        {
+          "id":1,
+          "componentName":"ButtonWithModel",
+          "props":[
             {
-              "id": 1,
-              "type": "password",
-              "placeholder": "type yous password",
-              "label": "password"
-            }  , {
-              "id": 2,
-              "type": "name",
-              "placeholder": "type your name",
-              "label": "name"
-            }, {
-              "id": 3,
-              "type": "phone",
-              "placeholder": "type your phone",
-              "label": "number"
-            }, {
-              "id": 4,
-              "type": "date",
-              "label": "BOD"
-            },{
-              "id": 5,
-              "type": "file",
-              "label": "photo"
-            },{
-              "id":6,
-              "type":"radio",
-              "label":"gender",
-              "data":["male","female"]
+              "button":[{
+                "onClick": "showModel",
+                "children": "show"
+                           }],
+           "model":{
+                  "id": 1,
+                  "componentName": "Form",
+                  "props": [
+                    {
+                      "id": 0,
+                      "type": "email",
+                      "placeholder": "type your email",
+                      "label": "email"
+                    },
+                    {
+                      "id": 1,
+                      "type": "password",
+                      "placeholder": "type yous password",
+                      "label": "password"
+                    }  , {
+                      "id": 2,
+                      "type": "name",
+                      "placeholder": "type your name",
+                      "label": "name"
+                    }, {
+                      "id": 3,
+                      "type": "phone",
+                      "placeholder": "type your phone",
+                      "label": "number"
+                    }, {
+                      "id": 4,
+                      "type": "date",
+                      "label": "BOD"
+                    },{
+                      "id": 5,
+                      "type": "file",
+                      "label": "photo"
+                    },{
+                      "id":6,
+                      "type":"radio",
+                      "label":"gender",
+                      "data":["male","female"]
+                    }
+                ]
+                }
             }
-        ]
-      }]},{
-        "id":4,
-        "name":"SC_4",
-        "children":[
-          {
-            "id":0,
-            "componentName": "Header"
-          },
-          {
-            "id":1,
-            "componentName":"Card",
-            "props":[
-              {
-                "id":1,
-                "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-                "paragraph":"this is card",
-                "span":"created by FE Team",
-                "button":[{
-                  "onClick": "showModel",
-                  "children": "show"
-                             }]
-
-              }
-            ]
-          },
-          {
-            "id":2,
-            "componentName":"Model",
-            "props":[
-              {
-                  "img":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-                  "paragraph":"this is card",
-                  "span":"created by FE Team",
-                  "button":[{
-                    "onClick": "hideModel",
-                    "children": "Close"
-                               }]   
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-
-  
-  
-       
+          ]
+        }, {
+          "id":1,
+          "componentName":"ButtonWithModel",
+          "props":[
+            {
+              "button":[{
+                "onClick": "showModel",
+                "children": "View"
+                           }],
+           "model":{
+                  "id": 2,
+                  "image":"https://cdn.logo.com/hotlink-ok/logo-social.png"
+              
+                }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "componentName": "Footer"
+        }
+      ]
+    }
+  ]
+}

@@ -36,11 +36,8 @@ export interface CustomButtonInterface {
 
 const Model: React.FC<CardProps> = ({ props }) => {
   const [closeState, setCloseState] = useState(false);
-//   const actions = props.map((prop)=>prop.button.map((btn)=>btn.onClick));
 
   const hideModel = () => {
-    // console.log(actions);
-    // return actions;
     setCloseState(true);
   };
   const functionMap:any = {
@@ -52,8 +49,6 @@ const Model: React.FC<CardProps> = ({ props }) => {
       onClickFunction();
     }
   };
-// console.log(props.map((prop)=>prop.button.map((btn)=>btn.onClick)));
-// console.log();
 
 
   const handleCloseModal = () => {

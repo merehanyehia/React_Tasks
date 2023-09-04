@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-// Rename ButtonInterface to avoid naming conflict
 export interface CardInterface {
   id: string;
   img: string;
@@ -31,6 +30,8 @@ export interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ props, button }) => {
+  // console.log(props);
+  
   const [showState, setShowState] = useState(false);
 //   const actions = props.map((prop)=>prop.button.map((btn)=>btn.onClick));
 
@@ -75,8 +76,9 @@ const Card: React.FC<CardProps> = ({ props, button }) => {
       <Modal isOpen={showState} onRequestClose={handleCloseModal}>
       {props.map((prop) => (
         <>
-          <img src={prop.model.img} alt='show' style={{ height: 800, width: 1000 }} />
           <div className='m-4'>
+          <img src={prop.model.img} alt='show' style={{ height: 800, width: 1000 }} />
+
             <p className='font-bold'>{prop.model.paragraph}</p>
             <span className='block text-gray-500 text-sm'>{prop.model.span}</span>
             <div>
